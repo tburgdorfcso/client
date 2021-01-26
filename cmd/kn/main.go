@@ -25,6 +25,8 @@ import (
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 
+	_ "k8s.io/client-go/plugin/pkg/client/auth"
+
 	"knative.dev/client/pkg/kn/config"
 	"knative.dev/client/pkg/kn/plugin"
 	"knative.dev/client/pkg/kn/root"
