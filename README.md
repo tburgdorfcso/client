@@ -1,3 +1,21 @@
+# FORK
+
+This fork adds all kubernetes [auth plugins](https://github.com/kubernetes/client-go/tree/master/plugin/pkg/client/auth) to `kn`.
+
+Prebuild binaries can be found in `/bin/`.
+If your os/architecture is missing, please add it:
+
+1. Clone this repo
+1. Set go cross-compile variables if neccessary, i.e.:
+
+   ```bash
+   GOOS="windows"
+   GOARCH="amd64"
+   ```
+
+1. Compile with `go build -o bin/kn-{{os}}-{{arch}} cmd/kn`
+1. Create pull-request
+
 # Kn
 
 [![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white)](https://pkg.go.dev/knative.dev/client)
